@@ -21,21 +21,34 @@ body {
   }
   
   .bg-primary {
-    background-color: #2e4fb3 !important;
+    background-color: #464444!important;
   }
-  
-  .text-primary {
-    color: #4e73df !important;
+    .text-primary {
+    color: #464444 !important;
   }
   
   .btn-primary {
-    background-color: #4e73df;
-    border-color: #4e73df;
+    background-color: #464444;
+    border-color: #464444;
   }
   
   .btn-primary:hover {
-    background-color: #2e59d9;
-    border-color: #2e59d9;
+    background-color: #525354;
+    border-color: #5a5a5b;
+  }
+  .logout-button {
+    background-color: #e74c3c; /* Red background for logout */
+    color: #fff; /* White text color */
+    padding: 8px 16px;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    color: #fff;
   }
   
   .footer {

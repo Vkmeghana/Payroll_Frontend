@@ -15,6 +15,21 @@
     margin: 20;
     
 }
+.logout-button {
+    background-color: #e74c3c; /* Red background for logout */
+    color: #fff; /* White text color */
+    padding: 8px 16px;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    color: #fff;
+  }
+  
 
 .form-control{
     height: 55px;

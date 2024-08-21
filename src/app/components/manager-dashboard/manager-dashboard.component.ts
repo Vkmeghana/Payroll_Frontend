@@ -11,6 +11,8 @@ import {   FormBuilder, FormControl, FormGroup, Validators, FormsModule, Reactiv
   templateUrl: './manager-dashboard.component.html',
   styleUrls: ['./manager-dashboard.component.css']
 })
+
+
 export class ManagerDashboardComponent implements OnInit {
 
   leaveRequestCount: number = 0;

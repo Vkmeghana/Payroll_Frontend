@@ -14,19 +14,36 @@ body {
   .card:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   }
+
+  .logout-button {
+    background-color: #e74c3c; /* Red background for logout */
+    color: #fff; /* White text color */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    color: #fff;
+}
+
   
   .bg-primary {
-    background-color: #4e73df !important;
+    background-color: #464444 !important;
   }
   
   .btn-primary {
-    background-color: #4e73df;
-    border-color: #4e73df;
+    background-color: #464444;
+    border-color: #464444;
   }
   
   .btn-primary:hover {
-    background-color: #2e59d9;
-    border-color: #2e59d9;
+    background-color: #464444;
+    border-color: #464444;
   }
   
   .form-label {

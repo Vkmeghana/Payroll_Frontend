@@ -10,14 +10,17 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" [routerLink]="['/leave-request']">Leave Requests</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#" [routerLink]="['/approve-leave']">Leaves</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" [routerLink]="['/manager-dashboard']">Profile</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" [routerLink]="['/manager-dashboard']">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link logout-button">Logout</a>
         </li>
+        </ul>
+        
       </ul>
     </div>
   </div>
@@ -34,12 +37,12 @@
           <div class="text-center mb-3">
             <img src="https://via.placeholder.com/150" alt="Manager Profile Picture" class="rounded-circle img-thumbnail">
           </div>
-          <h4 class="text-center mb-3">John Doe</h4>
-          <p><strong>Employee ID:</strong> 12345</p>
+          <h4 class="text-center mb-3">Mr.Manager</h4>
+          <p><strong>Employee ID:</strong> 987654</p>
           <p><strong>Position:</strong> Senior Manager</p>
-          <p><strong>Department:</strong> Human Resources</p>
-          <p><strong>Email:</strong> john.doecompany.com</p>
-          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Department:</strong> Engineering Benefits</p>
+          <p><strong>Email:</strong> manager.ukg.com</p>
+          <p><strong>Phone:</strong> (+91)9876543210</p>
         </div>
       </div>
     </div>
@@ -50,8 +53,7 @@
           <h5 class="card-title mb-0">About Me</h5>
         </div>
         <div class="card-body">
-          <p>Experienced manager with a passion for team development and process improvement. Committed to fostering a positive work environment and achieving organizational goals.</p>
-        </div>
+          
       </div>
     </div>
   </div>
@@ -101,11 +103,7 @@
       <div class="col-md-6">
         <h5>Contact</h5>
         <p class="mb-0">Email: supportcompany.com</p>
-        <p class="mb-0">Phone: (555) 987-6543</p>
-      </div>
-      <div class="col-md-6 text-md-end">
-        <p class="mb-0">&copy; 2024 Manager Dashboard. All rights reserved.</p>
-        <p class="mb-0">Version 1.0</p>
+        <p class="mb-0">Phone: (91)9898989812</p>
       </div>
     </div>
   </div>

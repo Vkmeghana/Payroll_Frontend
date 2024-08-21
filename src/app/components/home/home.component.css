@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: #555;
   }
   
   /* Info container styles */
@@ -98,7 +99,6 @@
     background-position: center;
     z-index: -1;
   }
-  
 .office-heading{
     font-weight: 500;
     columns: #444;
