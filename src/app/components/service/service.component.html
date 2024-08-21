@@ -47,9 +47,11 @@
 <body>
     <div class="container">
         <h1>Dashboard Links</h1>
-        <a href="#" class="link">Employee Dashboard</a>
-        <a href="#" class="link">Admin Dashboard</a>
-        <a href="#" class="link">Manager Dashboard</a>
+        <a href="#" class="link" [routerLink]="['/employee-dashboard']">Employee Dashboard</a>
+        <a href="#" class="link" [routerLink]="['/manager-dashboard']">Manager Dashboard</a>
+        <a href="#" class="link" [routerLink]="['/admin-dashboard']">Admin Dashboard</a>
+
+        
     </div>
 </body>
 </html>

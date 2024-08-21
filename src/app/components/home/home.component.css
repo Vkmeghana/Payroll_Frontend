@@ -61,6 +61,7 @@
     justify-content: center;
   }
   
+  
   .main-container h1 {
     font-size: 32px;
     margin-bottom: 20px;
@@ -82,6 +83,10 @@
     border-radius: 5px;
     font-weight: bold;
   }
+  html {
+    scroll-behavior: smooth;
+  }
+  
   
   .apply-button:hover {
     background-color: hsl(322, 75%, 78%);
