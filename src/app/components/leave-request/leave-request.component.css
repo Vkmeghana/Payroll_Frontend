@@ -1,5 +1,5 @@
 .bg-gradient-primary {
-    background: linear-gradient(to right, #4e73df, #224abe);
+    background: linear-gradient(to right,  #353536,  #353536);
   }
   
   .card {
@@ -11,18 +11,18 @@
   }
   
   .form-control:focus {
-    border-color: #4e73df;
+    border-color: #353536;
     box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
   }
   
   .btn-primary {
-    background-color: #4e73df;
-    border-color: #4e73df;
+    background-color:  #353536;
+    border-color:  #353536;
   }
   
   .btn-primary:hover {
-    background-color: #224abe;
-    border-color: #224abe;
+    background-color:  #525253;
+    border-color: #525253;
   }
   
   .input-group-text {
