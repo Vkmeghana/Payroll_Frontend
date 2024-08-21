@@ -76,7 +76,9 @@
               </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
-              <button type="button" class="btn btn-secondary me-md-2" >Reset</button>
+            
+<button type="button" class="btn btn-secondary me-md-2" (click)="resetForm()">Reset</button>
+
               <button type="submit" class="btn btn-primary" [disabled]="!employeeForm.valid">Create Employee</button>
             </div>
           </form>

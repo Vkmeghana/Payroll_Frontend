@@ -11,7 +11,7 @@ import { newEmployee } from '../../model/newemployee.model';
 })
 
 export class AdminDashboardService {
-  private apiUrl = 'http://localhost:8001/api';
+  private apiUrl = 'http://localhost:8080/api';
 
   constructor(private http: HttpClient) {}
 

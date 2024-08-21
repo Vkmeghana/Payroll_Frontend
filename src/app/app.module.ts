@@ -18,6 +18,7 @@ import { CreateEmployeeComponent } from './components/create-employee/create-emp
 import { LeaveApproveComponent } from './components/leave-approve/leave-approve.component';
 import { LeaveRequestComponent } from './components/leave-request/leave-request.component';
 import { ServiceComponent } from './components/service/service.component';
+import { HIComponent } from './components/hi/hi.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ServiceComponent } from './components/service/service.component';
     LeaveApproveComponent,
     LeaveRequestComponent,
     ServiceComponent,
+    HIComponent,
   ],
   imports: [
     BrowserModule,

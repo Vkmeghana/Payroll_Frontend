@@ -1,23 +1,19 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AdminDashboardService } from '../admin-dashboard/admin-dashboard.service';
-import { Employee } from '../../model/employee.model';
-import { FormBuilder, FormControl, FormGroup, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatSelectModule} from '@angular/material/select';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import { CommonModule } from '@angular/common';
 import { newEmployee } from '../../model/newemployee.model';
-
+import { FormBuilder, FormControl, FormGroup, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-create-employee',
   templateUrl: './create-employee.component.html',
-  styleUrl: './create-employee.component.css',
+  styleUrls: ['./create-employee.component.css'],
   standalone: true,
   imports: [MatFormFieldModule, MatSelectModule, FormsModule, ReactiveFormsModule, CommonModule],
 })
-
-
 export class CreateEmployeeComponent {
 
   errorMessage: string = '';
@@ -26,7 +22,6 @@ export class CreateEmployeeComponent {
   
   roles = new FormControl('');
   roleList: string[] = ['EMPLOYEE', 'MANAGER', 'ADMIN'];
-
 
   employee: newEmployee = {
     firstName: '',
@@ -60,16 +55,19 @@ export class CreateEmployeeComponent {
     }
   }
 
-
   ngOnInit(): void {
   }
 
-  createNewEmployee(): void{
+  createNewEmployee(): void {
     if (this.employeeForm.valid) {
       this.createEmployee(this.employeeForm.value);
     } else {
       console.log('Form is invalid');
     }
+  }
+
+  resetForm() {
+    this.employeeForm.reset();
   }
 
   createEmployee(employeeData: newEmployee): void {
@@ -79,7 +77,7 @@ export class CreateEmployeeComponent {
         this.successMessage = 'Employee created successfully.';
       },
       (error) => {
-        this.errorMessage = 'Some Error Occured.';
+        this.errorMessage = 'Some Error Occurred.';
       }
     );
   }

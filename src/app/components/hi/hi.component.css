@@ -1,0 +1,29 @@
+.image-scroll-container {
+  overflow: hidden; /* Hide the scrollbar */
+  white-space: nowrap; /* Prevent wrapping */
+  padding: 10px 0; /* Optional padding */
+  box-sizing: border-box; /* Ensure padding does not affect width calculation */
+  position: relative; /* Required for positioning the automatic scroll */
+}
+
+.image-scroll-wrapper {
+  display: flex; /* Align images in a row */
+  animation: scroll 10s linear infinite; /* Animation for auto-scrolling */
+}
+
+.image-item {
+  display: inline-block;
+  width: 33.33%; /* Make each image take up 1/3 of the container width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Optional spacing between images */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}

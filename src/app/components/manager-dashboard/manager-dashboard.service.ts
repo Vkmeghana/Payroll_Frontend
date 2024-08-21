@@ -10,7 +10,7 @@ import { Leave } from '../../model/leave.model';
   providedIn: 'root'
 })
 export class ManagerDashboardService {
-  private apiUrl = 'http://localhost:8000/leave';
+  private apiUrl = 'http://localhost:8080/leave';
 
   constructor(private http: HttpClient) {}
 

@@ -91,6 +91,10 @@
   .apply-button:hover {
     background-color: hsl(322, 75%, 78%);
   }
+  .large-heading {
+    font-size: rem; /* Adjust the size as needed */
+  }
+  
   
   /* Background image styles */
   .bg-img {

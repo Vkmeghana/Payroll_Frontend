@@ -9,8 +9,8 @@ import { SalaryInfo } from '../../model/salaryInfo.model';
   providedIn: 'root'
 })
 export class EmployeeDashboardService {
-  private apiUrl = 'http://localhost:8000/leave'; // Replace with your API base URL
-  private apiUrl2 = 'http://localhost:8002/report'; // Replace with your API base URL
+  private apiUrl = 'http://localhost:8080/leave'; 
+  private apiUrl2 = 'http://localhost:8080/report'; 
 
   constructor(private http: HttpClient) {}
 
