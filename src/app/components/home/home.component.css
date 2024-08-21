@@ -14,6 +14,16 @@
     margin-right: 20px;
   }
   
+  .custom-btn {
+    background-color: #464444; /* Replace with your desired color */
+    border-color: #464444; /* Optional: matches border color with background */
+}
+
+.custom-btn:hover {
+    background-color: #7f7c7c; /* Replace with your desired hover color */
+    border-color: #7f7c7c; /* Optional: matches border color with hover background */
+}
+
   .info-container h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -93,3 +103,4 @@
     font-weight: 500;
     columns: #444;
 }
+

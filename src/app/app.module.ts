@@ -27,9 +27,9 @@ import { ServiceComponent } from './components/service/service.component';
     AdminDashboardComponent,
     EmployeeDashboardComponent,
     HomeComponent,
-    ServiceComponent,
     LeaveApproveComponent,
     LeaveRequestComponent,
+    ServiceComponent,
   ],
   imports: [
     BrowserModule,

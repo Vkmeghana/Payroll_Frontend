@@ -1,22 +1,55 @@
-
-
-<div class="container mt-4">
-  <h2>Service Options</h2>
-  <ul class="list-group">
-    <li class="list-group-item">
-      <a routerLink="/employee-dashboard">Employee Dashboard</a>
-    </li>
-    <li class="list-group-item">
-      <a routerLink="/manager-dashboard">Manager Dashboard</a>
-    </li>
-    <li class="list-group-item">
-      <a routerLink="/edit-employee">Edit Employee</a>
-    </li>
-    <li class="list-group-item">
-      <a routerLink="/create-employee">Create Employee</a>
-    </li>
-    <li class="list-group-item">
-      <a routerLink="/admin-dashboard">Admin Dashboard</a>
-    </li>
-  </ul>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #464444;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .link {
+            display: block;
+            background-color: #fff;
+            color: #464444;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .link:hover {
+            background-color: #464444;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard Links</h1>
+        <a href="#" class="link">Employee Dashboard</a>
+        <a href="#" class="link">Admin Dashboard</a>
+        <a href="#" class="link">Manager Dashboard</a>
+    </div>
+</body>
+</html>

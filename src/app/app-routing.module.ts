@@ -17,17 +17,16 @@ const routes: Routes = [
     component: ManagerDashboardComponent,
     pathMatch: 'full'
   },
-{
-  path: 'service',
-      component: ServiceComponent,
-      pathMatch: 'full'
- },
-
   {
     path: 'employee-dashboard',
     component: EmployeeDashboardComponent,
     pathMatch: 'full'
   },
+  {
+    path: 'service',
+        component: ServiceComponent,
+        pathMatch: 'full'
+   },  
   {
     path: 'admin-dashboard',
     component: AdminDashboardComponent,

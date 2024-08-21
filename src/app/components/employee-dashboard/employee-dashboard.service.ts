@@ -14,9 +14,6 @@ export class EmployeeDashboardService {
 
   constructor(private http: HttpClient) {}
 
-//  getRemainingLeave(employeeId:number):Observable<any>{
-//   return this.http.et<any>('${this.apiUrl}/')
-//  }
 
  getLeave(employeeId: number):Observable<LeaveRequest>{
   return this.http.get<LeaveRequest>(`${this.apiUrl}/viewLeaves?employeeId=${employeeId}`).pipe(
