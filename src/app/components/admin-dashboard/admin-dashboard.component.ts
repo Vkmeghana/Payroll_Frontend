@@ -15,12 +15,12 @@ import { Router } from '@angular/router';
 export class AdminDashboardComponent implements OnInit{
   employees = [
     {
-      employeeId: 1001,
-      firstName: 'John',
-      lastName: 'Doe',
+      employeeId: 1234,
+      firstName: 'aman',
+      lastName: 'khan',
       jobTitle: 'Software Engineer',
-      phoneNumber: '+1 234-567-8901',
-      email: 'john.doe@example.com',
+      phoneNumber: '461672738',
+      email: 'aman@ukg.com',
       employeeRoles: ['Admin', 'User']
     },
     {
