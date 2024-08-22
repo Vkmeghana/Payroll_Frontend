@@ -12,6 +12,36 @@
     margin-bottom: 15px; /* Adjusted spacing between form elements */
   }
 
+  /* Ensure no underlines on links */
+.nav-link {
+  text-decoration: none;
+}
+
+/* Style the button as outlined */
+.btn-outline-dark {
+  color: rgb(84, 84, 84);
+  border-color: rgb(84, 84, 84);
+}
+
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: rgb(84, 84, 84);
+  border-color: rgb(84, 84, 84);
+}
+
+/* Add padding and border radius */
+.nav-link.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Optional: Change button's color on hover */
+.btn-outline-dark:focus, .btn-outline-dark:hover {
+  color: #fff;
+  background-color: rgb(84, 84, 84);
+  border-color: rgb(84, 84, 84);
+}
+
   
    
   .btn-primary {

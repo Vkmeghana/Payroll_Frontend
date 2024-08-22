@@ -1,25 +1,22 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ManagerDashboardComponent } from './components/manager-dashboard/manager-dashboard.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 import { EmployeeDashboardComponent } from './components/employee-dashboard/employee-dashboard.component';
 import { HomeComponent } from './components/home/home.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { EditEmployeeComponent } from './components/edit-employee/edit-employee.component';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatInputModule, MatFormField, MatLabel } from '@angular/material/input';
-import { MatOption } from '@angular/material/core';
-import { provideHttpClient, withFetch } from "@angular/common/http";
-import { CreateEmployeeComponent } from './components/create-employee/create-employee.component';
 import { LeaveApproveComponent } from './components/leave-approve/leave-approve.component';
 import { LeaveRequestComponent } from './components/leave-request/leave-request.component';
 import { ServiceComponent } from './components/service/service.component';
 import { HIComponent } from './components/hi/hi.component';
 
+// Angular Material imports
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatOptionModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -36,21 +33,15 @@ import { HIComponent } from './components/hi/hi.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    AppRoutingModule,
-    HttpClientModule,
     FormsModule,
-    MatFormField,
+    HttpClientModule,
+    AppRoutingModule,
+    // Angular Material Modules
+    MatFormFieldModule,
     MatInputModule,
-    MatLabel,
-    MatOption
+    MatOptionModule,
   ],
-  exports:[
-  ],
-  providers: [
-    provideClientHydration(),
-    provideAnimationsAsync(),
-    provideHttpClient(withFetch())
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
