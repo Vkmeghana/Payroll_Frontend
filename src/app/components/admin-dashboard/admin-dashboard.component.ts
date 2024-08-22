@@ -13,7 +13,44 @@ import { Router } from '@angular/router';
 
 
 export class AdminDashboardComponent implements OnInit{
-  employees: Employee[] = []; // Placeholder data
+  employees = [
+    {
+      employeeId: 1001,
+      firstName: 'John',
+      lastName: 'Doe',
+      jobTitle: 'Software Engineer',
+      phoneNumber: '+1 234-567-8901',
+      email: 'john.doe@example.com',
+      employeeRoles: ['Admin', 'User']
+    },
+    {
+      employeeId: 1002,
+      firstName: 'Jane',
+      lastName: 'Smith',
+      jobTitle: 'Project Manager',
+      phoneNumber: '+1 345-678-9012',
+      email: 'jane.smith@example.com',
+      employeeRoles: ['Manager', 'User']
+    },
+    {
+      employeeId: 1003,
+      firstName: 'Emily',
+      lastName: 'Johnson',
+      jobTitle: 'UI/UX Designer',
+      phoneNumber: '+1 456-789-0123',
+      email: 'emily.johnson@example.com',
+      employeeRoles: ['Designer', 'User']
+    },
+    {
+      employeeId: 1004,
+      firstName: 'Michael',
+      lastName: 'Brown',
+      jobTitle: 'DevOps Engineer',
+      phoneNumber: '+1 567-890-1234',
+      email: 'michael.brown@example.com',
+      employeeRoles: ['DevOps', 'User']
+    }
+  ]; // Placeholder data
   errorMessage: string = '';
 
   constructor(private adminDashboardService: AdminDashboardService, private router: Router) { }
@@ -29,7 +66,6 @@ export class AdminDashboardComponent implements OnInit{
         this.employees = response
       },
       (error) => {
-        this.employees = [];
         this.errorMessage = 'Error fetching employees.';
       }
     );
